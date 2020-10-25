@@ -1,0 +1,16 @@
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\bin\Debug\netstandard2.0\CrossCutting.deps.json
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\bin\Debug\netstandard2.0\CrossCutting.dll
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\obj\Debug\netstandard2.0\CrossCutting.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\obj\Debug\netstandard2.0\CrossCutting.AssemblyInfo.cs
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\bin\Debug\netstandard2.0\CrossCutting.pdb
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\bin\Debug\netstandard2.0\Infra.dll
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\bin\Debug\netstandard2.0\Infra.pdb
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\obj\Debug\netstandard2.0\CrossCutting.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\obj\Debug\netstandard2.0\CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\obj\Debug\netstandard2.0\CrossCutting.csproj.CopyComplete
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\obj\Debug\netstandard2.0\CrossCutting.dll
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\obj\Debug\netstandard2.0\CrossCutting.pdb
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\bin\Debug\netstandard2.0\Service.dll
+C:\Users\HP\Desktop\Project ONeGreen\OneGreen\CrossCutting\bin\Debug\netstandard2.0\Service.pdb
