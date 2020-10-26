@@ -23,7 +23,7 @@ namespace Domain.Entity
         public DateTime Imported_t
         {
             get { return _import_t; }
-            set { _import_t = (value == null ? DateTime.Now : value); }
+            set { _import_t = (value == null ? DateTime.UtcNow : value); }
         }
         public string url { get; set; }
         public string creator { get; set; }

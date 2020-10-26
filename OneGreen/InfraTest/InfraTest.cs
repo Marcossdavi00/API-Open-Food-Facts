@@ -1,7 +1,9 @@
 using Domain.Entity;
 using Domain.Interfaces;
 using Moq;
+using System.Threading.Tasks;
 using Xunit;
+using Xunit.Sdk;
 
 namespace InfraTest
 {
@@ -49,16 +51,20 @@ namespace InfraTest
         [Fact]
         public void AlterarPorCodeDeProdutos()
         {
+            //Arrage
             _repositoryMock = new Mock<IProductsRepository>();
             Products products = new Products() { code = 1 };
 
             _repositoryMock.Setup(p => p.Create(products));
 
+            //Act
             Products products2 = new Products() { Status = (Domain.Helper.Enumerable.Status?)1 };
 
             var result = _repositoryMock.Setup(p => p.Update(products2, products.id));
 
+            //Assert
             Assert.NotNull(result);
         }
+     
     }
 }

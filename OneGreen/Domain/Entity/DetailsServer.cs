@@ -15,7 +15,7 @@ namespace Domain.Entity
         public DateTime UltimaAtualizacao
         {
             get { return _ultimaAtualizacao; }
-            set { _ultimaAtualizacao = (value == null ? DateTime.Now : value); }
+            set { _ultimaAtualizacao = (value == null ? DateTime.UtcNow : value); }
         }
     }
 }

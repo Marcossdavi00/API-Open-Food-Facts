@@ -45,7 +45,9 @@ namespace Application.Controllers
         {
             try
             {
-                return Ok(await _service.GetId(code));
+                var result = await _service.GetId(code);
+                var response = _mapper.Map<ProductsModelOutPut>(result);
+                return Ok(response);
             }
             catch (Exception ex)
             {
@@ -60,7 +62,7 @@ namespace Application.Controllers
             {
                 await _service.Create(products);
 
-                return Created("Criado", await _service.GetId(products.code));
+                return Created("Criado com Sucesso", await _service.GetId(products.code));
             }
             catch (Exception ex)
             {
@@ -68,7 +70,7 @@ namespace Application.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
             }
         }
-        [HttpPut("{code}")]
+        [HttpPut("products/{code}")]
         public async Task<IActionResult> Put([FromBody] ProductsStatusModelInput Enum, int code)
         {
             try
@@ -86,6 +88,22 @@ namespace Application.Controllers
             catch (Exception ex)
             {
 
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+        [HttpDelete("products/{code}")]
+        public async Task<IActionResult> Delete(int code)
+        {
+            try
+            {
+                var response = await _service.Delete(code);
+                if (response == false)
+                    return NotFound("Produto não encontrado");
+
+                return Ok("Produto Deletado");
+            }
+            catch (Exception ex)
+            {
                 return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
             }
         }
